@@ -1,7 +1,12 @@
 # CodeIgniter 4 Framework
 
-## Mantenedor de datos indicadores comerciales y gráfico de estos desde una api
+#### Mantenedor y gráfico de indicadores comerciales
+Utilización de Codeigniter 4, mysql y Bootstrap
 
-Crear base de datos
-Editar app/config/Database.php segun los datos de su base de datos
-Importar mediante el archivo en app/config/Database/Migrations/uf.sql
+
+Instalación:
+
+- Editar archivo en app/config/Database.php según los datos de su base de datos
+- Importar tabla mediante el archivo en app/config/Database/Migrations/uf.sql
+
+Datos obtenidos de [mindicador.cl](https://mindicador.cl)
