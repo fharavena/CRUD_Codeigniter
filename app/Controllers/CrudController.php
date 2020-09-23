@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+header("Access-Control-Allow-Origin: *");
+
 use CodeIgniter\Controller;
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
