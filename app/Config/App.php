@@ -4,8 +4,7 @@ use CodeIgniter\Config\BaseConfig;
 
 class App extends BaseConfig
 {
-	
- 	header("Access-Control-Allow-Origin: *");
+
 
 	/*
 	|--------------------------------------------------------------------------
