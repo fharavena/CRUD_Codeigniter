@@ -9,12 +9,7 @@ use App\Models\CrudModel;
 
 class CrudController extends Controller
 {
-    public function __construct()
-{
-    header('Access-Control-Allow-Origin: *');
-    header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
-    parent::__construct();
-}
+    
     public function index()
     {
         helper(['form', 'url']);
