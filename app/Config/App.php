@@ -21,7 +21,7 @@ class App extends BaseConfig
 	| environments.
 	|
 	*/
-	public $baseURL = 'http://localhost/miindicador/';	
+	public $baseURL = 'http://app-e2f4b293-294e-48cd-8897-1b09745c9964.cleverapps.io/';	
 
 	/*
 	|--------------------------------------------------------------------------
