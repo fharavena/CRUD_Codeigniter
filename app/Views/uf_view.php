@@ -145,7 +145,7 @@
             $('#form')[0].reset();
             <?php header('Content-type: application/json'); ?>
             $.ajax({
-                url: "<?php echo site_url('/mantenedor/editar') ?>/" + id,
+                url: "<?php echo site_url('crudcontroller/ajax_edit') ?>/" + id,
                 type: "GET",
                 dataType: "JSON",
                 success: function(data) {
