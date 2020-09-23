@@ -32,7 +32,6 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'CrudController::index');
 $routes->get('/mantenedor', 'CrudController::index');
-$routes->get('/mantenedor/editar', 'CrudController::ajax_edit');
 $routes->get('/indicador', 'IndicadorController::index');
 
 /**
