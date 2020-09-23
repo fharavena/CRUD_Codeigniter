@@ -31,7 +31,8 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'CrudController::index');
-$routes->get('/mantenedor', 'CrudController::index');
+//$routes->get('/mantenedor', 'CrudController::index');
+$routes->options('(:any)', 'CrudController::index'); //one options method for all routes.
 $routes->get('/indicador', 'IndicadorController::index');
 
 /**
