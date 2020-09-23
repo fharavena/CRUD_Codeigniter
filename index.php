@@ -1,6 +1,5 @@
 <?php
 
- header("Access-Control-Allow-Origin: *");
 
 // Valid PHP Version?
 $minPHPVersion = '7.2';
