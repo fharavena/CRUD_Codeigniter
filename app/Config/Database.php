@@ -31,10 +31,10 @@ class Database extends \CodeIgniter\Database\Config
 	 */
 	public $default = [
 		'DSN'      => '',
-		'hostname' => 'localhost',
-		'username' => '',
-		'password' => '',
-		'database' => '',
+		'hostname' => 'b3tx0ywjsgfsheyuvc7i-mysql.services.clever-cloud.com',
+		'username' => 'uffui71aqnbf8plg',
+		'password' => 'P8tPcXGqOSXz5FJv1lsg',
+		'database' => 'b3tx0ywjsgfsheyuvc7i',
 		'DBDriver' => 'MySQLi',
 		'DBPrefix' => '',
 		'pConnect' => false,
