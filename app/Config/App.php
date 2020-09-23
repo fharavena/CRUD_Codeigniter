@@ -20,7 +20,8 @@ class App extends BaseConfig
 	| environments.
 	|
 	*/
-	public $baseURL = 'http://app-e2f4b293-294e-48cd-8897-1b09745c9964.cleverapps.io/';	
+	public $baseURL = 'http://app-81d1215e-851f-4c5c-b135-2a819e07dceb.cleverapps.io/';	
+	
 
 	/*
 	|--------------------------------------------------------------------------
