@@ -20,7 +20,7 @@ class App extends BaseConfig
 	| environments.
 	|
 	*/
-	public $baseURL = 'http://app-81d1215e-851f-4c5c-b135-2a819e07dceb.cleverapps.io/';	
+	public $baseURL = 'http://localhost/miindicador/';	
 	
 
 	/*
@@ -33,7 +33,7 @@ class App extends BaseConfig
 	| variable so that it is blank.
 	|
 	*/
-	public $indexPage = 'index.php';
+	
 
 	/*
 	|--------------------------------------------------------------------------

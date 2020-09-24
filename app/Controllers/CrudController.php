@@ -8,13 +8,29 @@ use CodeIgniter\HTTP\ResponseInterface;
 use App\Models\CrudModel;
 
 class CrudController extends Controller
-{       
+{
     public function index()
     {
         helper(['form', 'url']);
         $this->CrudModel = new CrudModel();
         $data['ufs'] = $this->CrudModel->get_all_uf();
         return view('uf_view', $data);
+    }
+
+    public function indicadores()
+    {
+        helper(['form', 'url']);
+        $this->CrudModel = new CrudModel();
+        $data = $this->CrudModel->get_all_uf();
+        return json_encode($data);
+    }
+
+    public function indicador($id)
+    {
+        helper(['form', 'url']);
+        $this->CrudModel = new CrudModel();
+        $data = $this->CrudModel->get_by_id($id);
+        return json_encode($data);
     }
 
     public function consumir_api($apiUrl)
@@ -88,6 +104,7 @@ class CrudController extends Controller
         helper(['form', 'url']);
         $this->CrudModel = new CrudModel();
         $this->CrudModel->delete_by_id($id);
+
         echo json_encode(array("status" => TRUE));
     }
 }

@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -48,7 +48,8 @@
         <h3>Mantenedor UF</h3>
 
         <div class="col-12">
-            <button class="btn btn-primary my-3" onclick="sincronizar(1)"><i class="glyphicon glyphicon-plus"></i> 30 dias</button>
+            <button class="btn btn-primary my-3" onclick="sincronizar(0)"><i class="glyphicon glyphicon-plus"></i> Borrar todo</button>
+            <button class="btn btn-primary my-3 ml-3" onclick="sincronizar(1)"><i class="glyphicon glyphicon-plus"></i> 30 dias</button>
             <button class="btn btn-primary my-3 ml-3" onclick="sincronizar(2)"><i class="glyphicon glyphicon-plus"></i> 2020</button>
             <button class="btn btn-primary my-3 ml-3" onclick="sincronizar(3)"><i class="glyphicon glyphicon-plus"></i> Historico</button>
         </div>
@@ -121,7 +122,7 @@
             cargando.style.display = "";
             if (confirm('¿Realmente quieres actualizar la base de datos con la informacion de los ultimos 30 días?')) {
                 $.ajax({
-                    url: "<?php echo site_url('crudcontroller/sincronizar/') ?>" + id,
+                    url: "<?php echo site_url('indicador/sincronizar/') ?>" + id,
                     type: "GET",
                     success: function(data) {
                         location.reload();
@@ -145,7 +146,7 @@
             $('#form')[0].reset();
             <?php header('Content-type: application/json'); ?>
             $.ajax({
-                url: "<?php echo site_url('crudcontroller/ajax_edit') ?>/" + id,
+                url: "<?php echo site_url('indicador/encontrar') ?>/" + id,
                 type: "GET",
                 dataType: "JSON",
                 success: function(data) {
@@ -166,9 +167,9 @@
         function save() {
             var url;
             if (save_method == 'add') {
-                url = "<?php echo site_url('crudcontroller/uf_add') ?>";
+                url = "<?php echo site_url('indicador/add') ?>";
             } else {
-                url = "<?php echo site_url('crudcontroller/uf_update') ?>";
+                url = "<?php echo site_url('indicador/edit') ?>";
             }
 
             $.ajax({
@@ -190,8 +191,8 @@
             if (confirm('¿Realmente quieres borrar este registro?')) {
                 // ajax delete data from database
                 $.ajax({
-                    url: "<?php echo site_url('crudcontroller/uf_delete') ?>/" + id,
-                    type: "POST",
+                    url: "<?php echo site_url('indicador/borrar') ?>/" + id,
+                    type: "DELETE",
                     dataType: "JSON",
                     success: function(data) {
                         location.reload();
