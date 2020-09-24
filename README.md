@@ -10,3 +10,5 @@ Instalación:
 - Importar tabla mediante el archivo en app/config/Database/Migrations/uf.sql
 
 Datos obtenidos de [mindicador.cl](https://mindicador.cl)
+
+Demo [mindicador.cl](http://app-81d1215e-851f-4c5c-b135-2a819e07dceb.cleverapps.io/mantenedor)
